@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thanush Mohan Chalamala | AI/ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#05070f;--surface:#0b1122;--line:rgba(255,255,255,.09);--text:#eef1fb;--muted:#9aa4c2;--blue:#4f8cff;--violet:#9b6bff;--grad:linear-gradient(135deg,#4f8cff,#9b6bff);box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--text);font:16px/1.7 'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(700px 480px at 88% -4%,rgba(155,107,255,.2),transparent),radial-gradient(600px 460px at 2% 18%,rgba(79,140,255,.15),transparent)}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Sora',system-ui,sans-serif;line-height:1.15;letter-spacing:-.02em}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
+svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.muted{color:var(--muted)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .25s,border-color .25s;border-bottom:1px solid transparent}
+.nav.solid{background:rgba(5,7,15,.85);backdrop-filter:blur(14px);border-color:var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:600 1.05rem 'Sora',sans-serif;width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--grad)}
+.links{display:flex;gap:28px}
+.links a{color:var(--muted);font-size:.95rem;transition:color .2s}
+.links a:hover{color:var(--text)}
+.toggle{display:none;background:none;border:0;color:var(--text);cursor:pointer;font-size:22px}
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:center;width:100%}
+.role{color:var(--blue);font-weight:500;margin-bottom:18px}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem);font-weight:700;text-shadow:0 0 60px rgba(120,110,255,.35)}
+.hero-intro{color:var(--muted);font-size:1.2rem;max-width:520px;margin:22px 0 34px}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px}
+.socials{display:flex;gap:12px}
+.socials a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);color:var(--muted);font-size:20px;transition:color .2s,border-color .2s,box-shadow .2s}
+.socials a:hover{color:var(--text);border-color:var(--violet);box-shadow:0 0 18px rgba(155,107,255,.4)}
+.avatar{justify-self:center;width:min(320px,100%);aspect-ratio:1;border-radius:50%;padding:4px;background:var(--grad);box-shadow:0 0 90px rgba(120,110,255,.35)}
+.avatar span{width:100%;height:100%;border-radius:50%;display:grid;place-items:center;background:var(--surface);font:600 5rem 'Sora',sans-serif;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:12px;font-weight:500;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s}
+.btn.primary{background:var(--grad);color:#fff;box-shadow:0 8px 30px rgba(110,110,255,.3)}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:0 10px 38px rgba(110,110,255,.5)}
+.btn.ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.02)}
+.btn.ghost:hover{border-color:var(--blue)}
+.btn.sm{padding:8px 16px;font-size:.9rem}
+.section{padding:96px 0}
+.title{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:40px;max-width:640px}
+.prose{max-width:680px}
+.prose p+p{margin-top:16px;color:var(--muted)}
+.lead{font-size:1.2rem}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:16px;padding:26px;transition:border-color .25s}
+.card:hover{border-color:rgba(130,120,255,.5)}
+.card h3{font-size:1.2rem;margin-bottom:12px}
+.card p{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{padding:5px 13px;border-radius:99px;font-size:.85rem;background:rgba(79,140,255,.1);border:1px solid rgba(79,140,255,.25);color:#b9d0ff}
+.project{display:flex;flex-direction:column}
+.project .chips{margin-bottom:22px}
+.project .btn{margin-top:auto;align-self:flex-start}
+.timeline{display:grid;gap:20px;max-width:760px;border-left:2px solid var(--line);padding-left:28px}
+.timeline .r{color:var(--violet);font-weight:500;margin:-6px 0 10px}
+.ach{display:flex;gap:14px;align-items:flex-start}
+.ach p{color:var(--text)}
+.ach .i{color:var(--violet);margin-top:5px;font-size:20px}
+.edu h3{margin-bottom:6px}
+.edu p{color:var(--muted)}
+.contact{display:grid;gap:30px;justify-items:start}
+.clist{list-style:none;display:grid;gap:12px;color:var(--muted)}
+.clist li{display:flex;align-items:center;gap:12px}
+.clist .i{color:var(--blue);font-size:18px}
+.clist a:hover{color:var(--text)}
+.footer{border-top:1px solid var(--line);padding:40px 0 28px}
+.footer-in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.copy{text-align:center;margin-top:28px;font-size:.85rem}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:860px){.g3{grid-template-columns:repeat(2,1fr)}.hero-grid{grid-template-columns:1fr}.avatar{order:-1;width:200px}.avatar span{font-size:3.4rem}.hero{padding-top:100px}}
+@media(max-width:640px){.g2,.g3{grid-template-columns:1fr}.section{padding:72px 0}.toggle{display:block}.links{position:absolute;top:calc(64px + env(safe-area-inset-top,0px));left:0;right:0;flex-direction:column;gap:0;background:rgba(5,7,15,.97);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:max-height .3s}.links.open{max-height:420px}.links a{padding:14px 24px}.footer-in{flex-direction:column;align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const ic = {
+  github:'<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/>',
+  linkedin:'<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>',
+  mail:'<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>',
+  download:'<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>',
+  trophy:'<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>',
+  cap:'<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>',
+  pin:'<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
+  menu:'<line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>'
+};
+const I = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ic[n]}</svg>`;
+
+const P = {
+  name:'Thanush Mohan Chalamala',
+  title:'AI/ML Engineer | Software Developer | Entrepreneur',
+  tagline:'Building intelligent applications and turning ideas into practical solutions.',
+  intro:'I’m an aspiring AI/ML Engineer and technology enthusiast passionate about building intelligent applications, exploring emerging technologies, and transforming innovative ideas into practical solutions. I enjoy working across Artificial Intelligence, Software Development, and emerging technologies while continuously learning and building real-world projects.',
+  email:'REPLACE-your-email@example.com',
+  github:'https://github.com/REPLACE-your-username',
+  linkedin:'https://www.linkedin.com/in/REPLACE-your-profile',
+  location:'Andhra Pradesh, India'
+};
+const nav = ['About','Skills','Projects','Experience','Achievements','Education','Contact'];
+const about = [
+  'I’m pursuing a B.Tech in Artificial Intelligence and Machine Learning at Sir C.R. Reddy College of Engineering, graduating in 2028. My interests sit where AI meets software: LLMs, generative and agentic AI, and the applications built on top of them.',
+  'Alongside my studies I run Quantum9X EdTech LLP, where we build AI training programs, technical workshops, and hands-on learning experiences. Building a company has taught me to ship, listen to users, and keep things simple.'
+];
+const skills = [
+  ['Programming',['Python','Java','C']],
+  ['AI & ML',['Machine Learning','Deep Learning','NLP','Generative AI','LLMs','Agentic AI']],
+  ['Web Development',['HTML','CSS','JavaScript','React','Angular']],
+  ['Tools',['Git','GitHub','Flask','FastAPI','Firebase','Docker']]
+];
+const projects = [
+  ['Justice Analyzer','AI-powered legal document analysis that turns dense legal text into clear insights.',['Python','NLP','LLMs','Gemini API']],
+  ['ScamShield Bharat','A digital safety project raising awareness about cyber fraud and helping people spot scams.',['Cyber Safety','Awareness']],
+  ['QuantumShield','A machine learning-based adaptive fraud intelligence platform.',['Machine Learning','Fraud Detection']],
+  ['AI Job Hunter','AI-powered job discovery and tracking application.',['FastAPI','Firebase','AI']],
+  ['Q9X Personal AI Assistant','A personal AI assistant that answers questions and helps with everyday tasks.',['Python','Flask','Gemini API']]
+];
+const exp = [
+  ['Quantum9X EdTech LLP','Founder / Co-Founder','Building technology-driven educational initiatives, AI training programs, technical workshops, and practical learning experiences.'],
+  ['Startup India','Campus Ambassador','Representing the Startup India initiative on campus and encouraging student entrepreneurship.']
+];
+const ach = ['2nd Place, IIT Tirupati Machine Learning Hackathon','Finalist, HACKSAGON, IIIT Gwalior','Participated in 10+ hackathons','IEEE Vizag Bay Student Congress participation','Startup India Campus Ambassador'];
+const chips = a => `<div class="chips">${a.map(c=>`<span class="chip">${c}</span>`).join('')}</div>`;
+const sec = (id,t,body) => `<section id="${id}" class="section"><div class="wrap"><div class="reveal"><h2 class="title">${t}</h2>${body}</div></div></section>`;
+const initials = P.name.split(' ').map(w=>w[0]).slice(0,2).join('');
+
+document.getElementById('app').innerHTML = `
+<header class="nav" id="nav"><div class="wrap nav-inner">
+  <a href="#top" class="logo" aria-label="Home">${initials}</a>
+  <nav class="links" id="links" aria-label="Primary">${nav.map(n=>`<a href="#${n.toLowerCase()}">${n}</a>`).join('')}</nav>
+  <button class="toggle" id="tg" aria-label="Toggle menu" aria-expanded="false">${I('menu')}</button>
+</div></header>
+<main>
+<section id="top" class="hero"><div class="wrap hero-grid">
+  <div><p class="role">${P.title}</p><h1>${P.name}</h1><p class="hero-intro">${P.tagline}</p>
+    <div class="actions"><a class="btn primary" href="#projects">View projects</a><a class="btn ghost" href="#" onclick="return false" title="Add public/resume.pdf in the real project">${I('download')} Download resume</a></div>
+    <div class="socials"><a href="${P.github}" target="_blank" rel="noreferrer" aria-label="GitHub">${I('github')}</a><a href="${P.linkedin}" target="_blank" rel="noreferrer" aria-label="LinkedIn">${I('linkedin')}</a></div></div>
+  <div class="avatar" aria-label="Profile photo placeholder"><span>${initials}</span></div>
+</div></section>
+${sec('about','About me',`<div class="prose"><p class="lead">${P.intro}</p>${about.map(p=>`<p>${p}</p>`).join('')}</div>`)}
+${sec('skills','Skills',`<div class="grid g2">${skills.map(([c,i])=>`<div class="card"><h3>${c}</h3>${chips(i)}</div>`).join('')}</div>`)}
+${sec('projects','Projects',`<div class="grid g3">${projects.map(([n,d,t])=>`<article class="card project"><h3>${n}</h3><p>${d}</p>${chips(t)}<a class="btn ghost sm" href="${P.github}" target="_blank" rel="noreferrer">${I('github')} GitHub</a></article>`).join('')}</div>`)}
+${sec('experience','Experience',`<div class="timeline">${exp.map(([o,r,d])=>`<div class="card"><h3>${o}</h3><p class="r">${r}</p><p>${d}</p></div>`).join('')}</div>`)}
+${sec('achievements','Achievements',`<div class="grid g3">${ach.map(a=>`<div class="card ach">${I('trophy')}<p>${a}</p></div>`).join('')}</div>`)}
+${sec('education','Education',`<div class="card ach edu">${I('cap')}<div><h3>B.Tech in Artificial Intelligence and Machine Learning</h3><p>Sir C.R. Reddy College of Engineering</p><p>Expected graduation: 2028</p></div></div>`)}
+${sec('contact','Let’s Build Something Great Together.',`<div class="contact"><a class="btn primary" href="mailto:${P.email}?subject=Hello%20Thanush">${I('mail')} Send an email</a>
+<ul class="clist"><li>${I('mail')}<a href="mailto:${P.email}">${P.email}</a></li><li>${I('github')}<a href="${P.github}" target="_blank" rel="noreferrer">${P.github.replace('https://','')}</a></li><li>${I('linkedin')}<a href="${P.linkedin}" target="_blank" rel="noreferrer">${P.linkedin.replace('https://www.','')}</a></li><li>${I('pin')}${P.location}</li></ul></div>`)}
+</main>
+<footer class="footer"><div class="wrap footer-in"><div><strong>${P.name}</strong><p class="muted">${P.tagline}</p></div>
+<div class="socials"><a href="${P.github}" target="_blank" rel="noreferrer" aria-label="GitHub">${I('github')}</a><a href="${P.linkedin}" target="_blank" rel="noreferrer" aria-label="LinkedIn">${I('linkedin')}</a><a href="mailto:${P.email}" aria-label="Email">${I('mail')}</a></div></div>
+<p class="copy muted">© ${new Date().getFullYear()} ${P.name}. All rights reserved.</p></footer>`;
+
+const nav$ = document.getElementById('nav'), links = document.getElementById('links'), tg = document.getElementById('tg');
+const setSolid = () => nav$.classList.toggle('solid', scrollY > 16 || links.classList.contains('open'));
+addEventListener('scroll', setSolid, {passive:true}); setSolid();
+tg.onclick = () => { const o = links.classList.toggle('open'); tg.setAttribute('aria-expanded', o); setSolid(); };
+links.querySelectorAll('a').forEach(a => a.onclick = () => { links.classList.remove('open'); setSolid(); });
+const els = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+  els.forEach(e => io.observe(e));
+} else els.forEach(e => e.classList.add('in'));
+</script>
+</body>
+</html>
